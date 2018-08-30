@@ -1,0 +1,29 @@
+* C:\Users\Nived\Desktop\ANALOG_IC_PROJECT\Draft2.asc
+Vdd1 N006 0 0.7 AC 10m 0
+Vdd2 N005 0 0.7 AC 10m 0
+XX1 N002 N004 N005 N006 Vout stage1commonmodefeedback
+Vdd3 N004 0 0.7
+M1 N007 N007 0 NC_01 CMOSN l=0.2823529412µ w=0.24µ ad=0.0864p as=0.0864p pd=1.2µ ps=1.2µ
+Iref1 N003 N007 5.1e-6
+M2 N001 N002 N003 NC_02 CMOSP l=0.18µ w=0.612µ ad=0.22032p as=0.22032p pd=1.944µ ps=1.944µ
+Vdd4 N001 0 1.8
+
+* block symbol definitions
+.subckt stage1commonmodefeedback Vbias Vcmref1 Vom1 Vop1 Vcmfb1
+V1 N001 0 1.8
+Mc13 N003 N003 0 0 CMOSN l=0.5477647059µ w=0.24µ ad=0.0864p as=0.0864p pd=1.2µ ps=1.2µ
+Mc12 N002 Vcmref1 Vcmfb1 N002 CMOSP l=0.18µ w=0.3154639175µ ad=0.1135670103p as=0.1135670103p pd=1.350927835µ ps=1.350927835µ
+Mc14 Vcmfb1 N003 0 0 CMOSN l=0.5477647059µ w=0.24µ ad=0.0864p as=0.0864p pd=1.2µ ps=1.2µ
+Mc2 N002 Vom1 N003 N002 CMOSP l=0.2738823529µ w=0.24µ ad=0.0864p as=0.0864p pd=1.2µ ps=1.2µ
+Mc3 N002 Vop1 N003 N002 CMOSP l=0.2738823529µ w=0.24µ ad=0.0864p as=0.0864p pd=1.2µ ps=1.2µ
+Mc4 N001 Vbias N002 N001 CMOSP l=0.18µ w=0.6309278351µ ad=0.2271340206p as=0.2271340206p pd=1.98185567µ ps=1.98185567µ
+.INCLUDE C:\Program Files\LTC\LTspiceXVII\lib\tsmc018.lib
+.ends stage1commonmodefeedback
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Nived\Documents\LTspiceXVII\lib\cmp\standard.mos
+.ac dec 100 1 1e9
+.INCLUDE C:\Program Files\LTC\LTspiceXVII\lib\tsmc018.lib
+.backanno
+.end

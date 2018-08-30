@@ -1,0 +1,62 @@
+Circuit: * C:\Users\Nived\Desktop\ANALOG_IC_PROJECT - Copy\Draft1.asc
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+vernier = 0.5
+Gmin = 2.85678e-006
+vernier = 0.25
+vernier = 0.333333
+Gmin = 1.65938e-006
+vernier = 0.444444
+vernier = 0.592592
+Gmin = 6.04111e-007
+vernier = 0.790123
+Gmin = 1.2294e-007
+vernier = 1
+Gmin = 1.3779e-008
+Gmin = 1.47951e-009
+Gmin = 1.58861e-010
+Gmin = 1.70576e-011
+Gmin = 1.83154e-012
+Gmin = 1.9666e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Wed May 10 21:23:58 2017
+Total elapsed time: 13.252 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 33529
+traniter = 32777
+tranpoints = 16387
+accept = 16385
+rejected = 2
+matrix size = 36
+fillins = 28
+solver = Normal
+Thread vector: 56.9/29.7[2] 11.0/6.7[2] 2.7/2.8[1] 0.4/0.9[1]  2592/500
+Matrix Compiler1: 5.26 KB object code size  2.4/1.5/[1.0]
+Matrix Compiler2: 3.93 KB object code size  1.5/2.1/[1.1]
+
